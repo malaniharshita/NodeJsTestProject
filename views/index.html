@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit='savetoLocal(event)'>
+        <h1>Add Items</h1>
+          <div>
+          <!--<label for="Name">Name:</label> -->
+          ItemName: <input type="text" name="itemname" id = "itemname" >
+          </div>
+        
+          <div>
+          <!--<label for="email">Email:</label> -->
+          Description: <input type="text" name="des" id = "des" >
+          </div>
+          
+          <div>
+          <!--<label for="phonenumber">phonenumber:</label> -->
+          Price: <input type="text" name="price" id = "price" >
+          </div>
+
+          <div>
+            Quantity: <input type="text" name="quantity" id="quantity">
+          </div>
+          
+           <button value="Submit">Add Item</button>
+      </form>
+      <ul id="ListOfitems">
+        
+      </ul> 
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"></script>
+      <script src="index.js">
+      </script>
+
+</body>
+</html>
